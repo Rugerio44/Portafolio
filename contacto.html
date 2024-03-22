@@ -8,14 +8,16 @@
     <!--Estilos en general-->
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"/>
     <link rel="stylesheet" href="assets/fonts/poppins/poppins.css"/>
-    <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/loaders.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <!--Scripts-->
 
     <script src="assets/java/menu.js" defer ></script>
+    <script src="assets/java/map.js" defer></script>
     
     <title>Portafolio Gianni</title>
 </head>
@@ -42,42 +44,42 @@
 
                         <!--Menu Home-->
                         <li class="menu__opcion">
-                            <a href="index.html" class="menu__link menu__link--activar">
+                            <a href="index.html" class="menu__link">
                                <i class="menu__icono fa-solid fa-house"></i>
                                <span class="menu__overlay">Home</span>
                             </a>
                         </li>
-                        <!--Menu -->
+                        <!--Menu Sobre Mi -->
                         <li class="menu__opcion">
                             <a href="sobre-mi.html" class="menu__link">
                                <i class="menu__icono fa-solid fa-user"></i>
                                <span class="menu__overlay">Sobre mi</span>
                             </a>
                         </li>
-                        <!--Menu -->
+                        <!--Menu Curriculum-->
                         <li class="menu__opcion">
-                            <a href="curriculum.html" class="menu__link">
+                            <a href="curriculum.html" class="menu__link ">
                                <i class="menu__icono fa-solid fa-graduation-cap"></i>
                                <span class="menu__overlay">Curriculum</span>
                             </a>
                         </li>
-                        <!--Menu -->
+                        <!--Menu Portafolio-->
                         <li class="menu__opcion">
-                            <a href="portafolio.html" class="menu__link">
+                            <a href="portafolio.html" class="menu__link ">
                                <i class="menu__icono fa-solid fa-briefcase"></i>
                                <span class="menu__overlay">Portafolio</span>
                             </a>
                         </li>
-                        <!--Menu -->
+                        <!--Menu Blog-->
                         <li class="menu__opcion">
-                            <a href="blog.html" class="menu__link">
+                            <a href="blog.html" class="menu__link ">
                                <i class="menu__icono fa-solid fa-book"></i>
                                <span class="menu__overlay">Blog</span>
                             </a>
                         </li>
-                        <!--Menu -->
+                        <!--Menu Contacto-->
                         <li class="menu__opcion">
-                            <a href="contacto.html" class="menu__link">
+                            <a href="contacto.html" class="menu__link menu__link--activar">
                                <i class="menu__icono fa-solid fa-envelope"></i>
                                <span class="menu__overlay">Contacto</span>
                             </a>
@@ -113,7 +115,7 @@
                 </div>
                 <!--Pie de Página-->
                 <footer class="user-info__footer">
-                    &copy; 2024 Gianni Francesco Rugerio Lezama
+                    &copy; 2023 Gianni Francesco Rugerio Lezama
                 </footer>
             </section>
 
@@ -125,14 +127,94 @@
             <i class="menu-toggle__icon fa-solid fa-bars"></i>
             <i class="menu-toggle__icon fa-solid fa-xmark"></i>
         </div>
-        
+
 
         <!--Contenido de la Página-->
         <main class="layout__contenido">
-            <section class="contenido__pagina">
-                <h1 class="pagina__nombre">Gianni Francesco</h1>
-                <h2 class="pagina__trabajo">Desarrolador web</h2>
+
+            <!--Seccion sobre mi contenido-->
+            <section class="contenido__pagina contenido__contacto">
+                
+                <header class="contacto__header">
+                        <h1 class="contacto__titulo">Contacto</h1>  
+                </header>
+
+                <div class="contacto__contenedor">
+
+                    <seccion class="contacto__info">
+
+                        <div class="contacto__data">
+                            <i class="contacto__icono fa-solid fa-location-dot"></i>
+                            <h2 class="contacto__subtitulo">México</h2>
+                        </div>
+
+                        <div class="contacto__data">
+                            <i class="contacto__icono fa-solid fa-phone"></i>
+                            <h2 class="contacto__subtitulo">55668900</h2>
+                        </div>
+
+                        <div class="contacto__data">
+                            <i class="contacto__icono fa-solid fa-envelope"></i>
+                            <h2 class="contacto__subtitulo">correoprueba@gianni</h2>
+                        </div>
+
+                        <div class="contacto__data">
+                            <i class="contacto__icono fa-solid fa-circle-check"></i>
+                            <h2 class="contacto__subtitulo">Desarrolador Web</h2>
+                        </div>
+
+                    </seccion>
+
+                    <seccion class="contacto__form-box">
+
+                        <div class="contacto__map" id="load-iframe-map">
+                            <span class="loader"></span>
+                        </div>
+
+                        <header class="contacto__font-header">
+                            <h3 class="font-header__title">¿Como puedo <span class="subtitulo__color"> Ayudarte ?</span></h3>
+                        </header>
+
+                        <form action="" class="contacto__form">
+                            <div class="form__contenedor">
+
+                                <section class="form__left">
+
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" name="name" required placeholder="Nombre">
+                                        <label for="name" class="form__label">Nombre</label>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <input type="email" class="form__input" name="email" required placeholder="Email">
+                                        <label for="email" class="form__label">Email</label>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" name="subject" required placeholder="Asunto">
+                                        <label for="subject" class="form__label">Asunto</label>
+                                    </div>
+
+                                </section>
+
+                                <section class="form__right">
+
+                                    <div class="form__group form__group--textarea">
+                                        <textarea class="form__input form__input--textarea" name="Message" required placeholder="Mensaje" ></textarea>
+                                        <label for="Message" class="form__label">Mensaje</label>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <input type="submit" value="Enviar Mensaje" class="form__boton">
+
+                        </form>
+
+                    </seccion>
+                </div>
+                
             </section>
+
         </main>
     </div>
 
