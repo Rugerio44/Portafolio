@@ -706,7 +706,12 @@ h1,h2,h3,h4,h5,h6{
 .timelines__title{
     font-size: 1.5rem;
     margin-bottom:0.3rem;
-
+}
+.timelines__title-unitec{
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    margin-bottom:0.3rem;
+    font-weight: bold;
 }
 .timelines__text{
     font-size: 1.6rem;
@@ -827,17 +832,25 @@ h1,h2,h3,h4,h5,h6{
     width: 50%;
     height: 100%;
     padding: 2rem;
-    background-color:var(--color-iconos);
+    background-color: var(--color-principal);
     display: flex;
     justify-content: center;
     align-items: center;
     border-right: 2px solid var(--color-border-testimonios);
+    transition: all 400ms ease-in-out;
 }
+
+.certificados__contenidos:hover .certificado__logo{
+    background-color:rgb(0, 179, 179);
+    border-radius: 0.5rem;
+}
+
 
 .certificado__imagen{
     width: 72%;
 }
 .certificado__contenidos{
+    width: 80%;
     padding: 2rem 2.5rem;
 }
 
