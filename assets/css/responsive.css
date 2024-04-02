@@ -17,6 +17,23 @@
 .layout_menu-toggle{
     display: none;
 }
+@media (min-width: 1832px){
+
+    .acerca__titulo::after, .portafolio__titulo::after {
+        right: 72.5rem;
+    }
+
+    .resumen__titulo::after {
+        right: 695px;
+    }
+    .blog__titulo::after {
+        right: 800px;
+    }
+    .contacto__titulo::after {
+        right: 724px;
+    }
+}
+
 
 @media (max-width: 1563px){
     .acerca__titulo::after,
@@ -313,5 +330,10 @@
         flex-basis: 100%;
         margin-right: unset;
     }
-
+    .timelines__compañia {
+        font-size: 0.9rem;
+    }
+    .servicios__titulo::after{
+        display: none; 
+    }    
 }
