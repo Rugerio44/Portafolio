@@ -80,7 +80,7 @@
 
     .pagina__wave {
         left: 0%;
-        width: 102%;
+        width: 107%;
     }
     .pagina__wave2{
         left: 0%;
@@ -92,11 +92,11 @@
     }
     .pagina__wave4{
         left: 0%;
-        width: 102%;
+        width: 107%;
     }
     .pagina__wave5{
         left: 0%;
-        width: 102%;
+        width: 107%;
     }
     .pagina__wave6{
         left: 0%;
@@ -144,6 +144,22 @@
         display: block;
         position: absolute;
         top: 25%;
+        left: 34%;
+        transition: all 300ms ease-in-out;
+    }
+    .fa-xmark{
+        color: var(--color-principal);
+        display: block;
+        position: absolute;
+        top: 24%;
+        left: 34%;
+        transition: all 300ms ease-in-out;
+    }
+    .fa-bars{
+        color: var(--color-principal);
+        display: block;
+        position: absolute;
+        top: 24%;
         left: 28%;
         transition: all 300ms ease-in-out;
     }
