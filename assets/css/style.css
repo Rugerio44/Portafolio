@@ -177,14 +177,14 @@ h1,h2,h3,h4,h5,h6{
     min-height: 100%;
  
     background-color: var(--color-secundario);
-    border-radius: 0 10rem 10rem 0;
+    border-radius: 10rem 10rem 10rem 10rem;
     overflow: flex;
 }
 
 .contenido__pagina{
     min-height: 100%;
     background-color: var(--color-principal);
-    border-radius: 3.2rem;
+    border-radius: 0rem 5rem 5rem 0;
 
     display: flex;
     flex-direction: column;
@@ -362,6 +362,7 @@ h1,h2,h3,h4,h5,h6{
 
 }
 .menu__overlay{
+    z-index: 4;
     position: absolute;
     right: 0;
     margin-top: -3rem;
@@ -373,6 +374,8 @@ h1,h2,h3,h4,h5,h6{
     white-space: nowrap;
     transition: 0.5s;
     border-radius:3rem ;
+    border: 2px solid black;
+    
 }
 
 .menu__opcion:hover .menu__overlay{
