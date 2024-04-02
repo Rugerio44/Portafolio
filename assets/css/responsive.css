@@ -12,6 +12,7 @@
 
     --color-border-testimonios: #e5e6e7;
     --color-compañia:#9457aa;
+    --color-terceario: #00B3B3;
 }
 
 .layout_menu-toggle{
@@ -77,6 +78,30 @@
 }
 @media(max-width: 1060px){
 
+    .pagina__wave {
+        left: 0%;
+        width: 102%;
+    }
+    .pagina__wave2{
+        left: 0%;
+        width: 102%;
+    }
+    .pagina__wave3{
+        left: 0%;
+        width: 102%;
+    }
+    .pagina__wave4{
+        left: 0%;
+        width: 102%;
+    }
+    .pagina__wave5{
+        left: 0%;
+        width: 102%;
+    }
+    .pagina__wave6{
+        left: 0%;
+        width: 102%;
+    }
 
 
     .body{
@@ -107,7 +132,7 @@
         line-height: 4.8rem;
         font-size: 2.5rem;
         text-align: center;
-        background-color: var(--color-secundario);
+        background-color: var(--color-terceario);
         color: var(--color-principal);
         border-radius: 3rem;
         cursor: pointer;

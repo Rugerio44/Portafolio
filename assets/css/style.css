@@ -13,6 +13,7 @@
 
     --color-border-testimonios: #e5e6e7;
     --color-compañia:#9457aa;
+    --color-background-index: rgb(232 255 255);
 }
 html{
     font-size: 62.5%;/*equivalente a 10px*/
@@ -59,11 +60,10 @@ h1,h2,h3,h4,h5,h6{
 /* BARRA LATERAL AZUL */
 .layout__aside{
     grid-area: aside;
-    
     border-radius: 4rem 0 0 4rem;
     overflow: auto;
     overflow-x: hidden;
-    
+    border-right: 3px solid white;
 }
 
 .aside__user-info{
@@ -193,6 +193,122 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
 }
 
+.pagina__wave{
+    z-index: 2;
+    opacity: 1;
+    position:  absolute;
+    left:30%;
+    bottom: 0;
+    width: 70%;
+    height: 100px;
+    background-image: url(../img/wave.png);
+    background-size: 1000px 100px;
+    border-radius: 0px 0px 30px 0px;
+    animation: animate 10s linear infinite;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(65%) saturate(4653%) hue-rotate(278deg) brightness(90%) contrast(93%);
+}
+
+.pagina__wave2{
+    z-index: 1;
+    opacity: 0.8;
+    position:  absolute;
+    left:30%;
+    bottom: 15px;
+    width: 70%;
+    height: 100px;
+    background-image: url(../img/wave.png);
+    background-size: 1000px 100px;
+    border-radius: 0px 0px 30px 0px;
+    animation: animate2 8s linear infinite;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(16%) saturate(6908%) hue-rotate(147deg) brightness(99%) contrast(101%);
+    animation-delay: -5s;
+}
+
+.pagina__wave3{
+    z-index: 1;
+    opacity: 0.5;
+    position:  absolute;
+    left:30%;
+    bottom: 25px;
+    width: 70%;
+    height: 100px;
+    background-image: url(../img/wave.png);
+    background-size: 1000px 100px;
+    border-radius: 0px 0px 30px 0px;
+    animation: animate 10s linear infinite;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(65%) saturate(4653%) hue-rotate(278deg) brightness(90%) contrast(93%);
+    animation-delay: -5s;
+}
+
+.pagina__wave4{
+    z-index: 2;
+    opacity: 1;
+    position:  absolute;
+    left:30%;
+    top: 0;
+    width: 70%;
+    height: 100px;
+    background-image: url(../img/wave.png);
+    background-size: 1000px 100px;
+    border-radius: 0px 0px 0px 30px;
+    animation: animate 10s linear infinite;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(65%) saturate(4653%) hue-rotate(278deg) brightness(90%) contrast(93%);
+    transform: rotate(180deg);
+
+}
+
+.pagina__wave5{
+    z-index: 1;
+    opacity: 0.8;
+    position:  absolute;
+    left:30%;
+    top: 15px;
+    width: 70%;
+    height: 100px;
+    background-image: url(../img/wave.png);
+    background-size: 1000px 100px;
+    border-radius: 0px 0px 0px 30px;
+    animation: animate2 8s linear infinite;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(16%) saturate(6908%) hue-rotate(147deg) brightness(99%) contrast(101%);
+    animation-delay: -5s;
+    transform: rotate(180deg);
+}
+
+.pagina__wave6{
+    z-index: 1;
+    opacity: 0.5;
+    position:  absolute;
+    left:30%;
+    top: 25px;
+    width: 70%;
+    height: 100px;
+    background-image: url(../img/wave.png);
+    background-size: 1000px 100px;
+    border-radius: 0px 0px 0px 30px;
+    animation: animate 10s linear infinite;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(65%) saturate(4653%) hue-rotate(278deg) brightness(90%) contrast(93%);
+    animation-delay: -5s;
+    transform: rotate(180deg);
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes animate2{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -1000px 0;
+    }
+}
+
 .pagina__nombre{
     font-size: 6rem;
     margin-bottom: 2.5rem;
@@ -210,6 +326,7 @@ h1,h2,h3,h4,h5,h6{
     right: -12.0rem;
     min-width: 11rem;
     background-color: var(--color-Transparente);
+
 }
 .menu__lista{
     position: relative;
