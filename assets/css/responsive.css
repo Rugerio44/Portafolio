@@ -21,18 +21,17 @@
 @media (min-width: 1832px){
 
     .acerca__titulo::after, .portafolio__titulo::after {
-        right: 72.5rem;
+        right: 75.5rem;
+        top: 15px;
     }
 
     .resumen__titulo::after {
-        right: 695px;
+        right: 717px;
     }
     .blog__titulo::after {
-        right: 800px;
+        right: 678px;
     }
-    .contacto__titulo::after {
-        right: 724px;
-    }
+
 }
 
 
@@ -275,6 +274,13 @@
     }
     
 }
+@media(max-width: 750px){
+    .articulo__mascara {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+}
 
 @media(max-width: 800px){
     .testimonios_review{
@@ -348,7 +354,18 @@
     .contacto__map {
         margin-top: 2rem;
     }
-
+    .articulo__texto1{
+        display: none;
+    }
+    .articulo__texto2{
+        display: none;
+    }
+    .articulo__icono2 {
+        left: calc(65% - 2.2rem);
+    }
+    .articulo__icono {
+        left: calc(25% - 2.2rem);
+    }
 }
 
 @media(max-width: 480px){
@@ -378,4 +395,12 @@
     .servicios__titulo::after{
         display: none; 
     }    
+    .articulo__icono {
+        left: calc(30% - 2.2rem);
+        font-size: 6rem;
+    }
+    .articulo__icono2 {
+        left: calc(66% - 2.2rem);
+        font-size: 6rem;
+    }
 }
