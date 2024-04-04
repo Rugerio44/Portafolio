@@ -655,3 +655,10 @@
         gap: 2rem;
     }
 }
+
+@media(max-width: 640px){
+    .layout {
+        min-width: 472px;
+    }
+    
+}

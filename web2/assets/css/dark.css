@@ -93,3 +93,16 @@ body{
 .fizquierda__btn:hover {
     background-color: var(--color-bg-BTN);
 }
+
+.mobile-btn__line {
+    background-color:var(--color-bg-dark);
+}
+.menu-mobile__close {
+    color: var(--color-bg-dark);
+}
+.menu-mobile__link {
+    color: var(--color-bg-dark);
+}
+.submenu-mobile__link {
+    color: var(--color-bg-dark);
+}
