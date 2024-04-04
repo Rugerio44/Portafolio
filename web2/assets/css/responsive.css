@@ -660,5 +660,24 @@
     .layout {
         min-width: 472px;
     }
-    
+    .fizquierda__grupo {
+        display: flex;
+        flex-direction: column;
+    }
+    .fizquierda__grupo {
+        width: 100%;
+        height: 5.2rem;
+        gap: 3rem;
+        box-shadow: 0 8px 41px -13px var(--color-primario);
+    }
+    .fizquierda__btn {
+        margin-left: 0rem;
+        margin-top: 1rem;
+        padding: 1rem 10rem;
+        
+    }
+    .fizquierda__email-icon {
+        left: 3.5rem;
+        top: 1.4rem;
+    }
 }
