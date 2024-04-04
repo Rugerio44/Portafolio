@@ -1,0 +1,95 @@
+:root{
+    --mx-width: 1320px;
+    --color-text-body: #d3d3d4;
+    --color-primario:#5856e9;
+    --color-secundario: #d3d3d4;
+    --color-banner: #27272e;
+    --color-text-BTN:#fff;
+    --color-bg-BTN: #2522ba;
+    --color-subtitulo:#c75c6f;
+    --color-titulos: #d3d3d4;
+    --color-bg-servicios: #27272e;
+    --color-bg-proyectos: #292930;
+    --color-bg-dark:#27272e;
+    --color-descripcion: #99a1aa;
+    --color-hover-dark:#303035;
+    --color-borders: #393940;
+    --color-ama:#F9CF5B;
+}
+
+body{
+    background-color: #212121;
+}
+.nav__submenu{
+    background-color: var(--color-banner);
+}
+
+.nav__title:hover{
+    color: var(--color-secundario);
+}
+
+.nav__title::before{
+    background-color: var(--color-secundario);
+}
+
+.submenu__title:hover{
+    color: var(--color-secundario);
+}
+
+.submenu__title::after{
+    background-color: var(--color-secundario);
+}
+
+.banner__btn{
+    background-color: var(--color-primario);
+}
+
+.menu__navbar--fixed{
+    background-color: var(--color-banner);
+}
+
+.proyecto__contenido{
+    background-color: var(--color-banner);
+    border: 1px solid;
+    border-top: none;
+}
+
+.layout__contacto::before {
+    background-color: var(--color-banner);
+}
+
+.contacto__subtitulo {
+    color: var(--color-ama);
+}
+
+.fizquierda__grupo {
+    background-color: #27272e;
+    box-shadow: none;
+}
+.fizquierda__form-control {
+    color: #27272e;
+    background-color: #27272e;
+}
+
+.servicios__servicio{
+    background-color: var(--color-borders);
+}
+
+.proyecto__titulo:hover {
+    color: var(--color-descripcion);
+}
+.testimonio__descripcion {
+    color: var(--color-descripcion);
+}
+.noticia__mas {
+    color: var(--color-descripcion);
+}
+
+.widget__link:hover{
+    color: var(--color-primario);
+    transform: scale(1.2);
+}
+
+.fizquierda__btn:hover {
+    background-color: var(--color-bg-BTN);
+}
