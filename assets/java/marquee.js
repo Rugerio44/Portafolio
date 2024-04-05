@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         if (window.innerWidth > 1060) {
             marquee(".marquee__list",0.1);
         } else {
-            marquee(".marquee__list",0.9);
+            marquee(".marquee__list",1.2);
         }
     }
 
