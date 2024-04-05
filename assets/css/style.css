@@ -413,14 +413,14 @@ h1,h2,h3,h4,h5,h6{
 .portafolio__titulo,
 .blog__titulo,
 .contacto__titulo,
-.font-header__title{
+.font-header__title,
+.acerca__marquee{
     font-size: 3.2rem;
     position: relative;
     text-align: left;
 }
 .acerca__titulo::after,
-.portafolio__titulo::after
- {
+.portafolio__titulo::after{
     content: "";
     position: absolute;
     top: 1.5rem;
@@ -466,7 +466,54 @@ h1,h2,h3,h4,h5,h6{
     margin-right: 0.5rem;
     color:var(--color-secundario);
     font-weight: 600;
-}   
+} 
+
+.acerca__marquee{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.marquee__titulo{
+    margin-bottom: 1.5rem;
+}
+.marquee__container{
+    display: flex;
+    overflow: hidden;
+}
+
+.marquee__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15rem;
+}
+
+.marquee__item:first-child{
+    margin-left: 20rem;
+}
+
+.marquee__item {
+    border: 5px solid var(--color-subtitulo);
+    padding: 1rem;
+    border-radius: 9rem;
+    padding-left: 2.5rem;
+    background-color: var(--color-secundario);
+    box-shadow: -2px 17px 2rem 1rem rgba(0, 0, 0, 0.25);
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.marquee__item:hover{
+    color: var(--color-secundario);
+}
+
+
+
+
+
+
+
  
     /*Servicios,Testimonios,Clientes y Precios Compartidos*/
 .acerca__servicios,
@@ -1188,6 +1235,16 @@ h1,h2,h3,h4,h5,h6{
     color: var(--color-principal);
 }
 
+.articulo__icono3{
+    position: absolute;
+    top: calc(42% - 2.2rem);
+    left: calc(47.5% - 2.2rem);
+    width: 4.4rem;
+    text-align: center;
+    font-size: 8rem;
+    color: var(--color-principal);
+}
+
 .articulo__texto1 {
     position: absolute;
     top: calc(78% - 2.2rem);
@@ -1202,6 +1259,16 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     top: calc(78% - 2.2rem);
     left: calc(61% - 2.2rem);
+    width: 4.4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-principal);
+}
+
+.articulo__texto3 {
+    position: absolute;
+    top: calc(70% - 2.2rem);
+    left: calc(46% - 2.2rem);
     width: 4.4rem;
     text-align: center;
     font-size: 2rem;
