@@ -1083,6 +1083,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+
 .certificado__imagen{
     width: 72%;
 }
@@ -1541,4 +1542,16 @@ h1,h2,h3,h4,h5,h6{
     background-image:-webkit-repeating-radial-gradient(center center,var(--color-secundario),var(--color-secundario) 1px, transparent 0px,transparent 100%);
     background-size: 6px 6px;
     opacity: 0.5;
+}
+.certificado__descarga {
+    display: flex;
+    width: 230px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 0.2rem solid var(--color-secundario);
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.22);
 }
