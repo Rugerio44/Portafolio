@@ -1100,6 +1100,11 @@ h1,h2,h3,h4,h5,h6{
     width: 72%;
     transition: all 500ms ease-in-out;
 }
+
+.certificado__imagen{
+    width: 93%;
+}
+
 .certificado__contenidos,
 .certificado__contenidos2
 {
