@@ -1052,20 +1052,23 @@ h1,h2,h3,h4,h5,h6{
     color: var(--color-principal);
 }
 
-.certificados__contenidos{
+.certificados__contenidos,
+.certificados__contenidos2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem;
 }
-.certificados__certificado{
+.certificados__certificado,
+.certificados__certificado2{
     flex-basis: 100%;
     border: 3px solid var(--color-border-testimonios);
     border-radius: 0.8rem;
     display: flex;
 }
 
-.certificado__logo{
+.certificado__logo,
+.certificado__logo2{
     width: 50%;
     height: 100%;
     padding: 2rem;
@@ -1074,42 +1077,55 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
     align-items: center;
     border-right: 2px solid var(--color-border-testimonios);
-    transition: all 400ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
-.certificados__contenidos:hover .certificado__logo{
+.certificados__certificado:hover .certificado__logo{
     background-color:rgb(0, 179, 179);
     border-radius: 0.5rem;
 }
-
-
-
-.certificado__imagen{
-    width: 72%;
+.certificados__certificado2:hover .certificado__logo2{
+    background-color:rgb(75, 70, 80);
+    border-radius: 0.5rem;
+    filter:  invert(0%) sepia(60%) saturate(5%) hue-rotate(300deg) brightness(150%) contrast(92%);  
 }
-.certificado__contenidos{
+.certificados__certificado:hover .certificado__imagen {
+    transform: scale(1.2);  
+}
+.certificados__certificado2:hover .certificado__imagen2 {
+    transform: scale(1.1);  
+}
+.certificado__imagen,
+.certificado__imagen2{
+    width: 72%;
+    transition: all 500ms ease-in-out;
+}
+.certificado__contenidos,
+.certificado__contenidos2
+{
     width: 80%;
     padding: 2rem 2.5rem;
 }
 
-.certificado__titulo{
+.certificado__titulo,
+.certificado__titulo2{
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
 
-.certificado__id{
+.certificado__id,
+.certificado__id2{
     display: block;
     margin-bottom: 0.3rem;
     font-size: 1.3rem;
     color: var(--color-subtitulo);
 }
-.certificado__fecha{
+.certificado__fecha,
+.certificado__fecha2{
     font-size: 1rem;
     color: var(--color-subtitulo);
     opacity: 0.7;
 }
-
-
 /*Portafolio*/
 
 .portafolio__navbar{
