@@ -1297,7 +1297,6 @@ h1,h2,h3,h4,h5,h6{
 
 .articulos__articulo:hover  .article__image,
 .marquee__item:hover .marquee__icono{
-    
     opacity: 0.8;
     filter: blur(1px);
 }
