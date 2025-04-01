@@ -366,6 +366,43 @@
     .articulo__icono {
         left: calc(25% - 2.2rem);
     }
+    .certificado__imagen, .certificado__imagen2 {
+        width: 50%;
+        transition: all 500ms ease-in-out;
+    }
+    .certificados__contenidos, .certificados__contenidos2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .certificados__certificado, .certificados__certificado2 {
+        flex-basis: 100%;
+        border: 3px solid var(--color-border-testimonios);
+        border-radius: 0.8rem;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .certificado__logo, .certificado__logo2 {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--color-principal);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid var(--color-border-testimonios);
+        transition: all 500ms ease-in-out;
+    }
+    .certificado__contenidos, .certificado__contenidos2 {
+        width: 100%;
+        padding: 2rem 2.5rem;
+    }
+    .certificado__caja{
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media(max-width: 480px){

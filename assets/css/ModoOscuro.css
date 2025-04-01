@@ -1,0 +1,60 @@
+body.dark-mode {
+    background-color: #1F1F1F;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #c097f1;
+}
+
+body.dark-mode .layout__aside {
+    background-color: #121212;
+}
+
+body.dark-mode .menu__link {
+    color: #ffffff;
+}
+
+body.dark-mode .menu__link--activar {
+    background-color: #333333;
+}
+
+body.dark-mode .certificados__certificado,
+body.dark-mode .certificados__certificado2 {
+    background-color: #121212;
+    border-color: #333333;
+}
+body.dark-mode .aside__user-info {
+    background-color: #121212;
+    border-color: #333333;
+}
+body.dark-mode .menu__lista {
+    background-color: #1e1e1e;
+    border-color: #333333;
+}
+body.dark-mode .menu__lista {
+    background-color: #1e1e1e;
+    border-color: #333333;
+}
+body.dark-mode .contenido__pagina{
+    background-color: #1e1e1e;
+    border-color: #333333;
+}
+
+body.dark-mode .layout__aside {
+    scrollbar-width: thin;
+    scrollbar-color:  #1e1e1e #333333 ; 
+}
+body.dark-mode .user-info__btn{
+    background-color: #2B1641;
+}
+
+body.dark-mode .resumen__titulo,
+.resumen__subtitulo,
+.timelines__year,
+.timelines__title-unitec,
+.timelines__title,
+.certificado__titulo,
+.certificado__titulo2 {
+    color: #D5D5D5;
+}
