@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/ModoOscuro.css">
     
     <!--Scripts-->
 
@@ -68,6 +69,9 @@
                                <span class="menu__overlay">Proyectos</span>
                             </a>
                         </li>
+                        <li>
+                            <button class="dark-mode-toggle" onclick="toggleDarkMode()">Modo Oscuro</button>
+                        </li>
                     </ul>
                 </nav>
                 <!--Links a redes sociales-->
@@ -91,6 +95,8 @@
                 <div class="user-info__botones">
                     <a href="assets/Pdf/CURRICULUM VITAE GIANNI FRANCESCO RUGERIO LEZAMA 1.0.pdf" class="user-info__btn" download="CURRICULUM VITAE GIANNI FRANCESCO RUGERIO LEZAMA">Descargar mi CV</a>
                 </div>
+                
+                
                 <!--Pie de Página-->
                 <footer class="user-info__footer">
                     &copy; 2025 Gianni Francesco Rugerio Lezama
@@ -104,6 +110,7 @@
         <div class="layout_menu-toggle">
             <i class="menu-toggle__icon fa-solid fa-bars"></i>
             <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+            
         </div>
 
 
@@ -201,7 +208,7 @@
                     
                     <section class="certificados__contenidos">
 
-                        <!-- Quinto Certificado-->
+                        <!-- Primer Certificado-->
                         <article class="certificados__certificado2">
 
                             <div class="certificado__logo2">
@@ -315,6 +322,10 @@
 
         </main>
     </div>
-
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
