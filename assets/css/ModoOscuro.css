@@ -15,10 +15,6 @@ body.dark-mode .menu__link {
     color: #ffffff;
 }
 
-body.dark-mode .menu__link--activar {
-    background-color: #333333;
-}
-
 body.dark-mode .certificados__certificado,
 body.dark-mode .certificados__certificado2 {
     background-color: #121212;
@@ -31,10 +27,9 @@ body.dark-mode .aside__user-info {
 body.dark-mode .menu__lista {
     background-color: #1e1e1e;
     border-color: #333333;
-}
-body.dark-mode .menu__lista {
-    background-color: #1e1e1e;
-    border-color: #333333;
+    border-radius: 1rem;
+    border: 3px solid white;
+    padding: 1rem;
 }
 body.dark-mode .contenido__pagina{
     background-color: #1e1e1e;
@@ -50,11 +45,23 @@ body.dark-mode .user-info__btn{
 }
 
 body.dark-mode .resumen__titulo,
-.resumen__subtitulo,
-.timelines__year,
-.timelines__title-unitec,
-.timelines__title,
-.certificado__titulo,
-.certificado__titulo2 {
+body.dark-mode .resumen__subtitulo,
+body.dark-mode .timelines__year,
+body.dark-mode .timelines__title-unitec,
+body.dark-mode .timelines__title,
+body.dark-mode .certificado__titulo,
+body.dark-mode .certificado__titulo2 {
     color: #D5D5D5;
 }
+
+body.dark-mode .contenido__pagina {
+    border-radius: 0rem 1rem 1rem 0;
+}
+body.dark-mode .acerca__titulo,
+body.dark-mode .marquee__titulo,
+body.dark-mode .servicios__titulo,
+body.dark-mode .blog__titulo,
+body.dark-mode .articulo__titulo,
+body.dark-mode .pagina__nombre{
+    color: #ffffff;
+} 

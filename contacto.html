@@ -84,6 +84,12 @@
                                <span class="menu__overlay">Contacto</span>
                             </a>
                         </li>
+                        <li class="menu__opcion">
+                            <div class="dark-mode-toggle" onclick="toggleDarkMode()"> 
+                                <i class="menu__icono fa-sharp-duotone fa-solid fa-sun fa-xl"></i> 
+                                <span class="menu__overlay">Poner Modo Oscuro</span> 
+                            </div> 
+                        </li>
                     </ul>
                 </nav>
                 <!--Links a redes sociales-->
@@ -218,5 +224,20 @@
         </main>
     </div>
 
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const icon = document.querySelector('.dark-mode-toggle i');
+            const text = document.querySelector('.dark-mode-toggle .menu__overlay');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                icon.className = 'menu__icono fa-solid fa-moon fa-xl';
+                text.textContent = 'Quitar Oscuro';
+            } else {
+                icon.className = 'menu__icono fa-sharp-duotone fa-solid fa-sun fa-xl';
+                text.textContent = 'Poner Oscuro';
+            }
+        }
+    </script>
 </body>
 </html>
