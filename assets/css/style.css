@@ -1367,6 +1367,15 @@ h1,h2,h3,h4,h5,h6{
     font-size: 2rem;
     color: var(--color-principal);
 }
+.articulo__texto4 {
+    position: absolute;
+    top: calc(70% - 1.2rem);
+    left: calc(46% - 0rem);
+    width: 4.4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-principal);
+}
 
 .articulos__articulo:hover  .articulo__logo,
 .marquee__item:hover .marquee__logo {
@@ -1574,4 +1583,16 @@ h1,h2,h3,h4,h5,h6{
     border: 0.2rem solid var(--color-secundario);
     border-radius: 1.5rem;
     box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.22);
+}
+.blog__react-titulo {
+    font-size: 5rem;
+    /* padding: 1.5rem; */
+    border-bottom: 4px solid;
+    color: #9a7de1;
+    /* line-height: normal; */
+    /* rotate: none; */
+    /* text-decoration: underline; */
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    text-align: center;
 }
