@@ -293,7 +293,6 @@ body{
 .formas__items--forma3{
     top: 34%;
     left: 50%;
-
     animation: mover_forma3 20s infinite ;
 }
 
